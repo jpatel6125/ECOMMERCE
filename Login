@@ -76,7 +76,7 @@ public class Login {
                 case 2:
                     Account signin = log.new Account();
                 if (signin.signIn(acc)) {
-                    System.out.println("Account logged in");
+                    System.out.println("You are logged in. Enjoy your shopping!!");
                 }
                 break;
             }
