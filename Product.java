@@ -1,3 +1,5 @@
+package Project.Product;
+
 public class Product {
     private String name;
     private double price;
@@ -5,12 +7,12 @@ public class Product {
     private int quantity;
 
     public Product(String name, double price, int id, int quantity)
-        {
-            this.name = name;
-            this.price = price;
-            this.id = id;
-            this.quantity = quantity;
-        }
+    {
+        this.name = name;
+        this.price = price;
+        this.id = id;
+        this.quantity = quantity;
+    }
 
     public String getName(){
         return name;
@@ -28,7 +30,7 @@ public class Product {
         return quantity;
     }
 
-    public void updateQuantity(int purchase){
+    public void reduceQuantity(int purchase){
         if(quantity >= purchase)
         {
             quantity -= purchase;
