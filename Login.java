@@ -93,10 +93,6 @@ public class Login {
 
                         // Link user cart after successful login
                         Cart userCart = signInAccount.getCart();  // Get user's cart
-                        // Now the user can add/remove items to/from their cart
-
-                        // Example operation on cart (you would replace this with actual shopping logic)
-//                        System.out.println("You have " + userCart.getItemsCount() + " items in your cart.");
                     }
                     break;
 
@@ -110,7 +106,7 @@ public class Login {
             }
         } while (choice != 3);
 
-        // Output all registered accounts (for demonstration purposes)
+        // Output all registered accounts 
         for (Account account : accounts) {
             System.out.println(account.getEmail());
         }
